@@ -44,7 +44,7 @@ Options:
 ### Decrypt a File
 
 ```bash
-python main.py decrypt secret_document.pdf.encrypted
+python main.py decrypt secret_document.pdf.wncry (reference XD)
 ```
 
 Options:

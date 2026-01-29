@@ -13,7 +13,7 @@ env/
 .idea/
 
 # Encrypted files (optional - user may want to track these)
-# *.encrypted
+# *.wncry
 
 # OS files
 .DS_Store

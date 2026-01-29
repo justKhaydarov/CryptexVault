@@ -39,7 +39,7 @@ def get_password(confirm: bool = False) -> str:
 def encrypt_command(args):
     """Handle file encryption."""
     input_path = args.file
-    output_path = args.output or f"{input_path}.encrypted"
+    output_path = args.output or f"{input_path}.wncry"
     
     if not os.path.exists(input_path):
         print(f"Error: File not found: {input_path}")
@@ -116,8 +116,8 @@ def decrypt_command(args):
     # Determine output path
     if args.output:
         output_path = args.output
-    elif input_path.endswith('.encrypted'):
-        output_path = input_path[:-10]
+    elif input_path.endswith('.wncry'):
+        output_path = input_path[:-6]
     else:
         output_path = input_path + '.decrypted'
     
